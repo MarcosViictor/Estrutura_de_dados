@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int valores(void);
+
+int main(){
+    int resultado = valores();
+    return 0;
+}
+
+int valores(void){
+    int x [10];
+    for(int i = 0; i < 10; i++){
+        scanf("%d", &x[i]);
+    }
+
+    for(int i = 0; i < 10; i++){
+        if (x[i] < 0){
+            x[i] = 1;
+        }
+    }
+
+    for(int i = 0; i < 10; i++){
+        printf("X[%d] = %d\n", i, x[i]);
+    }
+    return 0;
+}
