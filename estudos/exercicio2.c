@@ -9,6 +9,7 @@ int main (){
     float media_valor = calcular_a_media(); //Chamando minha função.
     printf("Essa é sua Média: %f\n", media_valor);
 
+    return 0;
 }
 
 float calcular_a_media(void){
